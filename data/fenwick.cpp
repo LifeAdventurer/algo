@@ -15,7 +15,7 @@ class FenwickTree {
   void modify(int x, T val) {
     while (x < n) {
       fenw[x] += val;
-      x += lowbit(x)){
+      x += lowbit(x);
     }
   }
 
@@ -23,7 +23,7 @@ class FenwickTree {
     T val{};
     while (x > 0) {
       val += fenw[x];
-      x -= lowbit(x)
+      x -= lowbit(x);
     }
     return val;
   }
